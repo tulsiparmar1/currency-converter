@@ -87,10 +87,18 @@ function Currency() {
             sx={{
               background: "transparent",
               "&:hover": { background: "transparent" },
+              color: "white",
             }}
           >
             {currencies.map((curr, index) => (
-              <Option value={curr.code} key={index}>
+              <Option
+                value={curr.code}
+                key={index}
+                sx={{
+                  background: "black",
+                  color: "gray",
+                }}
+              >
                 {curr.code}
               </Option>
             ))}
@@ -104,6 +112,7 @@ function Currency() {
             value={to}
             sx={{
               background: "transparent",
+              color: "white",
               "&:hover": { background: "transparent" },
             }}
           >
