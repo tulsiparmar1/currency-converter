@@ -1,0 +1,50 @@
+@mixin displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inptmain {
+  @include displayFlex();
+  height: 100vh;
+}
+
+.inpt {
+  display: flex;
+  flex-direction: column;
+  // background-color: white;
+  background-color: rgba(128, 128, 128, 0.089);
+  color: rgb(180, 178, 178);
+  padding: 40px;
+  border-radius: 20px;
+  gap: 10px;
+}
+.inpt {
+  input {
+    width: 300px;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+  }
+}
+
+body {
+  // background-color: #b9d4aa;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  height: 30px;
+  background-color: #5a827e;
+  border: none;
+  color: white;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background-color: #3c5856;
+    cursor: pointer;
+  }
+}
